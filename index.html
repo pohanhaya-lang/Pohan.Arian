@@ -1,33 +1,127 @@
 <!DOCTYPE html>
-<html lang="ps">
+<html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<title>Kankor Preparation System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pohaan Mohammadkhil | Portfolio</title>
 
 <style>
 
 body{
-font-family: Arial;
-text-align:center;
-background:#f2f2f2;
+margin:0;
+font-family: Arial, sans-serif;
+background:#f4f6f9;
+color:#333;
 }
 
-.container{
-margin-top:100px;
+/* Navbar */
+
+nav{
+background:#1e3a8a;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-button{
-padding:15px 25px;
-font-size:20px;
-background:#2c7be5;
+nav h2{
 color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
+margin:0;
 }
 
-button:hover{
-background:#1a5edb;
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+margin:0;
+padding:0;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/* Hero Section */
+
+.hero{
+background:linear-gradient(120deg,#2563eb,#06b6d4);
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+padding:12px 25px;
+border:none;
+border-radius:6px;
+font-size:18px;
+cursor:pointer;
+text-decoration:none;
+}
+
+.btn-primary{
+background:white;
+color:#2563eb;
+}
+
+.btn-secondary{
+background:#22c55e;
+color:white;
+}
+
+/* Section */
+
+.section{
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
+text-align:center;
+}
+
+.section h2{
+margin-bottom:30px;
+}
+
+/* Cards */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 </style>
@@ -36,17 +130,113 @@ background:#1a5edb;
 
 <body>
 
-<div class="container">
+<!-- Navbar -->
 
-<h1>Kankor Preparation System</h1>
+<nav>
 
-<p>د کانکور د تمرین لپاره لاندې سیستم ته داخل شئ</p>
+<h2>Pohaan</h2>
 
-<a href="kankor.html">
-<button>Start Kankor Quiz</button>
-</a>
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="kankor.html">Kankor</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>Pohaan Mohammadkhil</h1>
+
+<p>Graphic Designer • Writer • Administrative Management</p>
+
+<a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+
+<a href="kankor.html" class="btn btn-secondary">Kankor Quiz</a>
+
+</section>
+
+<!-- About -->
+
+<section class="section" id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am Pohaan Mohammadkhil. I work in Graphic Design, Writing, and Administrative Management. 
+I also build educational projects like the Kankor preparation system.
+</p>
+
+</section>
+
+<!-- Portfolio -->
+
+<section class="section" id="portfolio">
+
+<h2>Portfolio</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Graphic Design</h3>
+<p>Posters, Branding, Social Media Design</p>
+</div>
+
+<div class="card">
+<h3>Writing</h3>
+<p>Books, Articles and Content Writing</p>
+</div>
+
+<div class="card">
+<h3>Kankor System</h3>
+<p>Online Kankor Quiz Platform for Students</p>
+</div>
 
 </div>
+
+</section>
+
+<!-- Skills -->
+
+<section class="section" id="skills">
+
+<h2>Skills</h2>
+
+<div class="cards">
+
+<div class="card">Graphic Design</div>
+<div class="card">Writing</div>
+<div class="card">Web Development</div>
+<div class="card">Administration</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="section" id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: example@email.com</p>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 Pohaan Mohammadkhil</p>
+
+</footer>
 
 </body>
 </html>
