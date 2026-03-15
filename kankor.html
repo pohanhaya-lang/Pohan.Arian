@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="ps">
+<head>
+<meta charset="UTF-8">
+<title>Kankor Quiz System</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<h1>Kankor Quiz System</h1>
+
+<h2>Select Grade</h2>
+
+<select id="grade">
+<option value="10">Grade 10</option>
+<option value="11">Grade 11</option>
+<option value="12">Grade 12</option>
+</select>
+
+<h2>Select Subject</h2>
+
+<select id="subject">
+<option value="tafsir">Tafsir</option>
+<option value="math">Math</option>
+<option value="biology">Biology</option>
+</select>
+
+<br><br>
+
+<button onclick="startQuiz()">Start Quiz</button>
+
+<div id="quiz"></div>
+
+<p id="result"></p>
+
+<script src="data/questions.js"></script>
+<script src="js/quiz.js"></script>
+
+</body>
+</html>
